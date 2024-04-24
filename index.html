@@ -90,7 +90,7 @@
     dots[slideIndex-1].className += " active";
   }
   </script>
-            <h2>Wireframs</h2>
+            <h2>Wireframes</h2>
             <p>From here, we compiled the sketches into some initial wireframes. Our primary objective was incentivizing users to complete their profile with a photo and more information. We focused on two avenues to achieve this: 
             </p>
             <ol type="1" class="listItem">
@@ -103,108 +103,42 @@
             <p>For our first objective we added more customizable features since we believe that if people want to edit or fill out one feature on their profile they are more likely to fill out more things since they are already on their profile. Some new features we designed to achieve this included: 
             </p>
             <ol type="1" class="listItem">
-              <li>“Party anthem” module on the profile page. A fun feature that can help bring people to the edit profile page              </li>
+              <li>"Party anthem" module on the profile page. A fun feature that can help bring people to the edit profile page              </li>
               <li>Rebranding birthday month as horoscope on profile page.This feels less revealing of personal info and is more interesting to know</li>
               <li>Adding complete check mark on profile that can unlock new customization features               </li>
-              <li>Including buttons prompting the user to add socials by default when viewing the user’s own profile              </li>
+              <li>Including buttons prompting the user to add socials by default when viewing the user's own profile              </li>
               <li>Add new customization options for profile background (similar to event page)
               </li>
             </ol>
             <img src="assets/wireframe1.1.png" alt="Initial Wireframe">
-            <h2>Statistical Analysis</h2>
-            <h3>Misclick Rate</h3>
-            <p>
-                I used a chi-squared test to analyze misclick rate since it relies on categorical (in this case Boolean) data on whether or not the user misclicked.
-                <br><br>
-                <b>Chi^2 Value:  </b>8.7912
-                <br><br>
-                <b>P-Value: </b>0.003
-                <br><br>
-                <b>Misclick Rate A: </b>0.5
-                <br><br><b>Misclick Rate B: </b>0.11
-                <br><br>
-                <b>Analysis: </b> This statistical analysis supported my initial prediction and made me confident that page B had a significantly lower misclick rate. Since the p-value was less than .005, it is statistically significant and allows us to reject the null hypothesis in favor of the alternate hypthesis. Since the calculated misclick rate is 50% for site A and only 11% for site B, suggesting that not only is there a statistical difference between the two site, but that site A has a high misclick rate. The chi-squared value of 8.7912 supports a highest magnitude of deviation which also supports the theory that there is a significant difference between the frequencies on the two sites. <br>All together this allows us to reject the null hypothesis in favor of the alternate one, additionally suggesting that the misclick rate of page A is higher than page B. This indicates that the changes between page A and B led to a reduction in the misclick rate. 
-            </p>
-            <h3>Time on Page</h3>
-            <p>
-                I used a one-tailed t-test to analyze the difference between time on site A and site B because time is a continuous variable and my alternative hypothesis was that time on B would be smaller. Therefore, since I wasn't just looking at if the two were different, I was also testing if one was smaller, so the one-tailed test made the most sense.
-                <br><br>
-                <b>Avg(A):  </b>36,139.458 milliseconds
-                <br><br>
-                <b>Avg(B): </b>9,164.615 milliseconds
-                <br><br>
-                <b>Std(A): </b>14,570.9 milliseconds
-                <br><br>
-                <b>Std(B):  </b>3,176.9 milliseconds
-                <br><br>
-                <b>T-Score:  </b>-8.8766
-                <br><br>
-                <b>P-value (B less than A): </b>0.0000000016
-                <br><br>
-                <b>Analysis: </b> Overall the results of the test support the alternative hypothesis, and my prediction, about page B having a lower time on page. The average value of time on B was less than time on A, and the p-value was extremely low suggesting that there was a statistically significant difference between the time on the two sites. 
-                <br>Based on this, we can reject the null hypothesis in favor of the alternative hypothesis that the time spent on page A is greater than page B. 
-
-            </p>
-            <h3>Time until First Click</h3>
-            <p>
-                I used a one-tailed t-test to analyze the difference between time to first click on site A and site B because time is a continuous variable and my alternative hypothesis was that time to first click on B would be smaller. Therefore, since I wasn't just looking at if the two were different, I was also testing if one was smaller, so the one-tailed test made the most sense.
-                <br><br>
-                <b>Avg(A): </b> 14,476.875 milliseconds
-                <br><br>
-                <b>Avg(B):  </b>5,675.461 milliseconds
-                <br><br>
-                <b>Std(A): </b>8,408.1 milliseconds
-                <br><br>
-                <b>Std(B):  </b>2,927.2 milliseconds
-                <br><br>
-                <b>T-Score:  </b>-4.863
-                <br><br>
-                <b>P-value (B less than A): </b>0.000019
-                <br><br>
-                <b>Analysis: </b> Overall the results of the test support the alternative hypothesis, and my prediction, about page B having a lower time before first click. The average value of time before first click on page A was 14,276 milliseconds, while it was  only 5,675 milliseconds on page B. The P-value was extremely low, significantly below .05, suggesting that there is a statistically significant difference between the time before first click the two sites. <br>Based on this, we can reject the null hypothesis in favor of the alternative hypothesis that the time before first click on page A is significantly greater than page B. 
-            </p>
-            <h3>Summary Statistics</h3>
-            <table>
-                <tr>
-                  <th></th>
-                  <th>Version A</th>
-                  <th>Version B</th>
-                </tr>
-                <tr>
-                  <th>Misclick Rate</th>
-                  <td>.5</td>
-                  <td>.1</td>
-                </tr>
-                <tr>
-                  <th>Avg Time on Page</tj>
-                  <td>36,139.46 ms</td>
-                  <td>9,164.61 ms</td>
-                </tr>
-                <tr>
-                    <th>Time on Page Std</tj>
-                    <td>14,570.9 ms</td>
-                    <td>3,176.9 ms</td>
-                  </tr>
-                <tr>
-                  <th>Avg Time to 1st Click</th>
-                  <td>14,476.87 ms</td>
-                  <td>5,675.46 ms</td> 
-                </tr>
-                <tr>
-                    <th>Time to 1st Click Std</th>
-                    <td>8,408.1 ms</td>
-                    <td>2,927.2 ms</td> 
-                  </tr>
-              </table>
-              <p>For this project we only collected 24 data points for page A and 23 for page B. In an ideal world we would gain more accurate results using larger quantities of data. 
-                <br>
-                The large standard deviation for both metrics of page A suggests a significant range in user ease of experience, while the lower range for page B implies a more consistent user experience. The standard deviation also highlights the stark difference between the pages times with page A requiring significantly more time. These findings  apply both to time on page, as well as time to first click. 
-              </p>
-              <h2>
-                Conclusion
-              </h2>
-              <p>All together the results of these tests allow me to reject all three of my null hypotheses in favor of my alternative hypotheses. Page B consistently outperformed page A in each of the chosen metrics, indicating that the changes applied in page B create a faster and more streamlined user experience, with fewer misclicks. 
-            </p>
+            
+            <h2>High Fidelity Mockups</h2>
+            TODO
+          
+            <h2>Hi-Fi Design choices<h2>
+            <p>Our high fidelity mockups include the following features, aimed at incentivizing users to complete their Paritful profiles:<p>
+              
+            <h3>Complete check marks<h3>
+            <p>Everyone wants the verified blue checkmark on social media platforms like Instagram or Twitter, so we decided to leverage this motivation to incentivize users to complete their profiles. Once a profile is completely filled out, users get a yellow checkmark icon that appears next to their name.<p>
+              
+            <h3>Gatekeeping socials<h3>
+            <p>Users can't see other user's linked socials unless they have added socials themselves. This incentivizes users to avoid missed connections from parties by adding socials so partiers can get in touch.<p>
+              
+            <h3>Edit profile flow<h3>
+            <p>We added a progress bar to show how complete a user's profile is. This can help inform the user that there still things for them to complete, and to incentive users's to fill up the bar..<p>
+              
+            <h3>Party anthems<h3>
+            <p>We added the option to link a song from Spotify or Apple Music to a profile so that users can share more of their personality! This is a field that we think users will want to complete, which adds more information to their profile page.<p>
+            
+            <h3>Pop-ups<h3>
+            <p>We believe that adding more prompts with compelling reasons for users to add information will increase the completion of profiles. Adding fun pop-ups can remind the user that they haven't completed their profile while still allowing for easy dismissal in order not to be a burden. Our pop-ups also provide a reason for why Partiful is asking for this information. <p>
+            
+            
+            <h3>Customizable background<h3>
+            <p>Once a user completes all the information from their profile, they unlock customizable backgrounds and particles effects, similar to the events page. The idea is that users will enjoy the fun customization, and therefore be incentivized to complete their profiles.<p>
+            
+            <h3>Cards<h3>
+            <p>We modified the guest list of an event from a scrollable section of names and profile pictures, to featuring "cards" for each profile. These cards provide users with a fun way to showcase their customized profile settings even when in a list among other users. By expanding the effects of customization beyond a user's profile page, users are further incentivized to complete their profile.<p>
         </div>
     </body>
 </html>
