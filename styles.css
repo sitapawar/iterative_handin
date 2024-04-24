@@ -1,0 +1,196 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap');
+body{
+  /* background:#c3c1c9 */
+}
+img{
+  width:70%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+.mainText{
+    background-color: white;
+    align-items: center;
+    margin-left:14%;
+    margin-right: 14%;
+}
+h1{
+    margin-top: 6vw;
+    font-size:3vw;
+    padding: .5vw .5vw;
+    font-family: 'Playfair Display SC', serif;
+    text-align: center;
+    align-items: center;
+}
+h2{
+    font-size:2vw;
+    padding: .5vw .5vw;
+    font-family: 'Playfair Display SC', serif;
+    color:rgb(17,17,60);
+}
+h3{
+    font-size:1.7vw;
+    padding: .1vw;
+    font-family: 'Playfair Display', serif;
+    color:rgb(11,34,98);
+    margin-left: 2vw;
+}
+p{
+    margin-left:3.5vw;
+    font-size: 1.3vw;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.listItem{
+  margin-left:3.5vw;
+  font-size: 1.3vw;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.listItem li{
+  margin-left: 5vw;
+  margin-bottom: 1vw;
+  color:rgb(20,30,20);
+}
+nav{
+    margin:0;
+  }
+  ul.topnav {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    position: fixed;  
+    top: 0; 
+    width: calc(100% - 15px);; 
+    list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #005762;
+      background: rgb(26,0,36);
+background: linear-gradient(90deg, rgba(26,0,36,1) 0%, rgba(9,52,121,1) 97%);
+    }
+    
+  nav li {
+    float: right;
+  }
+    
+  nav li a {
+      display: block;
+      color: aliceblue;
+      font-size:1.5vw;
+      text-align: center;
+      text-decoration: none;
+      padding: 1vw 1vw;
+      font-family: 'Playfair Display', serif;
+  }
+  li a:hover:not(.titleText) {
+    filter: brightness(75%);  }
+
+  li a.titleText{
+    font-size:2vw;
+    padding: .5vw .5vw;
+    font-family: 'Playfair Display SC', serif;
+  }
+
+  li.titleText{
+    float:left;
+    
+  }
+  .imgLabel{
+    text-align: center;
+    font-size: .7vw;
+    margin-top: 0vw;
+    margin-bottom: 1vw;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+td, th{
+    border: solid #000;
+  text-align: left;
+  padding: .7vw;
+  margin:0;
+  font-size: .9vw;
+}
+table {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-collapse: collapse;
+    width: 70%;
+    align-items: center;
+    margin-left:14%;
+    margin-right: 14%;
+  }
+
+  * {box-sizing:border-box}
+
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color:rgb(26,0,36);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.1);
+  }
+  
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  .slideImg{
+    height:700px;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
