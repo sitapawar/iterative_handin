@@ -150,12 +150,13 @@ table {
     width: auto;
     margin-top: -22px;
     padding: 16px;
-    color:rgb(26,0,36);
+    color:#bbb;
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
+  
   }
   
   /* Position the "next button" to the right */
@@ -166,7 +167,7 @@ table {
   
   /* On hover, add a black background color with a little bit see-through */
   .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.1);
+    background-color: rgba(250,250,250,0.1);
   }
   
   
@@ -207,6 +208,13 @@ table {
   }
   .slideImg2{
     width:50%;
+  }
+  
+  .mySlides2 video{
+    width:50%;
+    align-items: center;
+    display: block;
+margin: 0 auto;
   }
   
   @keyframes fade {
