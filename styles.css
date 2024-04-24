@@ -1,6 +1,32 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
+@font-face {
+  font-family: 'TWK Lausanne Pan';
+  src: url('assets/fonts/TWK-Lausanne-Pan/TWKLausannePan-350.ttf') format('truetype');
+  font-weight: 350;
+}
+
+@font-face {
+  font-family: 'TWK Lausanne Pan';
+  src: url('assets/fonts/TWK-Lausanne-Pan/TWKLausannePan-400.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+    font-family: 'TWK Lausanne Pan';
+  src: url('assets/fonts/TWK-Lausanne-Pan/TWKLausannePan-550.ttf') format('truetype');
+  font-weight: 550;
+}
+
+@font-face {
+  font-family: 'TWK Lausanne Pan';
+  src: url('assets/fonts/TWK-Lausanne-Pan/TWKLausannePan-700.ttf') format('truetype');
+  font-weight: 700;
+}
+
 body{
   /* background:#c3c1c9 */
 }
@@ -136,6 +162,11 @@ table {
     background-color: #000;
   }
 
+  .slideshow-container2 img,
+  .slideshow-container2 video {
+    max-height: 70vh;
+    width: auto;
+  }
   
   /* Hide the images by default */
   .mySlides {
@@ -214,9 +245,82 @@ table {
     width:50%;
     align-items: center;
     display: block;
-margin: 0 auto;
+    margin: 0 auto;
   }
-  
+
+  .SYNE{
+    font-family: 'SYNE', sans-serif;
+    font-weight: 700;
+  }
+
+  .TWK-Lausanne-Pan{
+    font-family: 'TWK Lausanne Pan', sans-serif;
+  }
+
+  .f700{
+    font-weight: 700;
+  }
+  .f550{
+    font-weight: 550;
+  }
+  .f400{
+    font-weight: 400;
+  }
+  .f350{
+    font-weight: 350;
+  }
+
+/* Colors */
+.color-flex{
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  height: fit-content;
+  gap: 60px;
+  flex-direction: wrap;
+  flex-wrap: wrap;
+}
+
+.color-flex span{
+  display: block;
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  margin-top:10px;
+}
+
+.color-flex div{
+  width: 150px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#color-AE0FC8{
+  background-color: #AE0FC8;
+}
+
+#color-6F00FC{
+  background-color: #6F00FC;
+}
+#color-4B1097{
+  background-color: #4B1097;
+}
+
+#color-FFD480{
+  background-color: #FFD480;
+}
+
+.color-flex p{
+  margin-left: 0;
+}
+
+.font-list{
+  padding-left: 70px; /* to line up with h3 above */
+}
+
   @keyframes fade {
     from {opacity: .4}
     to {opacity: 1}

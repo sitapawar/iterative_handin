@@ -29,24 +29,24 @@
 
   <!-- Full-width images with number and caption text -->
   <div class="mySlides fade">
-    <img class="slideImg"src="assets/sketch4.png">
+    <img class="slideImg"src="assets/sketches/sketch4.png">
   </div>
 
   <div class="mySlides fade">
-    <img class="slideImg" src="assets/sketch1.png" >
+    <img class="slideImg" src="assets/sketches/sketch1.png" >
   </div>
 
   <div class="mySlides fade">
-    <img class="slideImg" src="assets/sketch2.png" >
+    <img class="slideImg" src="assets/sketches/sketch2.png" >
   </div>
   <div class="mySlides fade">
-    <img  class="slideImg" src="assets/sketch3.png" >
+    <img  class="slideImg" src="assets/sketches/sketch3.png" >
   </div>
   <div class="mySlides fade">
-    <img class="slideImg" src="assets/sketch5.png" >
+    <img class="slideImg" src="assets/sketches/sketch5.png" >
   </div>
   <div class="mySlides fade">
-    <img  class="slideImg" src="assets/sketch6.png" >
+    <img  class="slideImg" src="assets/sketches/sketch6.png" >
   </div>
 
   <!-- Next and previous buttons -->
@@ -117,22 +117,22 @@
 <div class="slideshow-container2">
 
   <div class="mySlides2 fade">
-    <video controls autoplay>
+    <video controls autoplay muted>
       <source src="./assets/videos/RSVP_Socials.mp4" type="video/mp4">
     </video>
   </div>
 
   <div class="mySlides2 fade">
-    <video controls autoplay>
+    <video controls autoplay muted>
       <source src="./assets/videos/fill_profile.mp4" type="video/mp4">
     </video>
   </div>
   <div class="mySlides2 fade">
-    <img class="slideImg2" src="assets/HighFi1.png">
+    <img class="slideImg2" src="assets/hi-fi-images/hi-fi-1.png">
   </div>
 
   <div class="mySlides2 fade">
-    <img class="slideImg2" src="assets/highFi2.png" >
+    <img class="slideImg2" src="assets/hi-fi-images/hi-fi-2.png" >
   </div>
 
   <!-- Next and previous buttons -->
@@ -175,30 +175,97 @@
     dots[slideIndex2-1].className += " active";
   }
   </script>
-            <h2>Hi-Fi Design choices</h2>
-            <p>Our high fidelity mockups include the following features, aimed at incentivizing users to complete their Paritful profiles:</p>
-              
-            <h3>Complete check marks</h3>
-            <p>Everyone wants the verified blue checkmark on social media platforms like Instagram or Twitter, so we decided to leverage this motivation to incentivize users to complete their profiles. Once a profile is completely filled out, users get a yellow checkmark icon that appears next to their name.</p>
-              
-            <h3>Gatekeeping socials</h3>
-            <p>Users can't see other user's linked socials unless they have added socials themselves. This incentivizes users to avoid missed connections from parties by adding socials so partiers can get in touch.</p>
-              
-            <h3>Edit profile flow</h3>
-            <p>We added a progress bar to show how complete a user's profile is. This can help inform the user that there still things for them to complete, and to incentive users's to fill up the bar..</p>
-              
-            <h3>Party anthems</h3>
-            <p>We added the option to link a song from Spotify or Apple Music to a profile so that users can share more of their personality! This is a field that we think users will want to complete, which adds more information to their profile page.</p>
-            
-            <h3>Pop-ups</h3>
-            <p>We believe that adding more prompts with compelling reasons for users to add information will increase the completion of profiles. Adding fun pop-ups can remind the user that they haven't completed their profile while still allowing for easy dismissal in order not to be a burden. Our pop-ups also provide a reason for why Partiful is asking for this information. </p>
-            
-            
-            <h3>Customizable background</h3>
-            <p>Once a user completes all the information from their profile, they unlock customizable backgrounds and particles effects, similar to the events page. The idea is that users will enjoy the fun customization, and therefore be incentivized to complete their profiles.</p>
-            
-            <h3>Cards</h3>
-            <p>We modified the guest list of an event from a scrollable section of names and profile pictures, to featuring "cards" for each profile. These cards provide users with a fun way to showcase their customized profile settings even when in a list among other users. By expanding the effects of customization beyond a user's profile page, users are further incentivized to complete their profile.</p>
-        </div>
-    </body>
+
+<h2>Style Guide</h2>
+<p>Partiful provided a style guide for us to use consisting of the following.</p>
+
+<h3>Fonts</h3>
+<p class="SYNE">SYNE: 700 weight used for event titles (44px), pop-up titles (25px), and names on profile pages (28px). </p>
+<p class="TWK-Lausanne-Pan">TWK Lausanne Pan:
+  <ul class="font-list">
+    <li class="TWK-Lausanne-Pan f700">700 weight is used for page headings in the top panel (18px) and subsection headings (18px). </li>
+    <li class="TWK-Lausanne-Pan f550">550 weight is used for button text (14px for in page button, 16px for pop-up buttons) and names of profile cards (16px). </li>
+    <li class="TWK-Lausanne-Pan f350">350 weight is used for both large body text (20px) and regular body text (12px).</li>
+  </ul>
+</p>
+
+<h3>Colors</h3>
+<p>
+  We built our prototype on Partiful's convention of a dark background (191B1D) with white text (FFFFFF).<br/>
+  Additionally, we were provided with multiple custom gradients and image overlays, which augment the dark background color and can be seen in our hi-fi mockups.<br/>
+  We also used colors common to these provided overlays to create gradient and radial backgrounds for our popups and calls to action. The colors comprising this palette are:
+</p>
+  <div class="color-flex" id="background-color-circles">
+    <div>
+        <span id="color-AE0FC8"></span> 
+        <p> #AE0FC8 <br>
+            <b>Dark Violet</b>
+        </p>
+    </div>
+
+    <div>
+        <span id="color-6F00FC"></span> 
+        <p> #6F00FC <br>
+           <b>Electric Indigo</b>
+        </p>
+    </div>
+
+    <div>
+        <span id="color-4B1097"></span> 
+        <p> #4B1097 <br>
+          <b>Indigo</b>
+        </p>
+    </div>
+  </div>
+  
+  <p>
+    We also added a yellow color for our completed profile badges, which was then incorporated as an accent color in the popups.
+  </p>
+  <div class="color-flex" id="yellow-color-circle">
+    <div>
+        <span id="color-FFD480"></span> 
+        <p> #FFD480 <br>
+            <b>Jasmine</b>
+        </p>
+    </div>
+  </div>
+
+
+<h3>Icons</h3>
+<p>
+
+</p>
+
+<h3>Others</h3>
+<p>Square corners should always be used, unless using 100% rounded corners in special cases, like buttons.</p>
+
+<p>We also created components to use for our profile cards, drawing on the preexisting style guide.</p>
+
+
+
+<h2>Hi-Fi Design choices</h2>              
+<h3>Complete check marks</h3>
+<p>Everyone wants the verified blue checkmark on social media platforms like Instagram or Twitter, so we decided to leverage this motivation to incentivize users to complete their profiles. Once a profile is completely filled out, users get a yellow checkmark icon that appears next to their name.</p>
+  
+<h3>Gatekeeping socials</h3>
+<p>Users can't see other user's linked socials unless they have added socials themselves. This incentivizes users to avoid missed connections from parties by adding socials so partiers can get in touch.</p>
+  
+<h3>Edit profile flow</h3>
+<p>We added a progress bar to show how complete a user's profile is. This can help inform the user that there still things for them to complete, and to incentive users's to fill up the bar..</p>
+  
+<h3>Party anthems</h3>
+<p>We added the option to link a song from Spotify or Apple Music to a profile so that users can share more of their personality! This is a field that we think users will want to complete, which adds more information to their profile page.</p>
+
+<h3>Pop-ups</h3>
+<p>We believe that adding more prompts with compelling reasons for users to add information will increase the completion of profiles. Adding fun pop-ups can remind the user that they haven't completed their profile while still allowing for easy dismissal in order not to be a burden. Our pop-ups also provide a reason for why Partiful is asking for this information. </p>
+
+
+<h3>Customizable background</h3>
+<p>Once a user completes all the information from their profile, they unlock customizable backgrounds and particles effects, similar to the events page. The idea is that users will enjoy the fun customization, and therefore be incentivized to complete their profiles.</p>
+
+<h3>Cards</h3>
+<p>We modified the guest list of an event from a scrollable section of names and profile pictures, to featuring "cards" for each profile. These cards provide users with a fun way to showcase their customized profile settings even when in a list among other users. By expanding the effects of customization beyond a user's profile page, users are further incentivized to complete their profile.</p>
+
+</div>
+</body>
 </html>
