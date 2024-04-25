@@ -335,15 +335,8 @@ table {
   align-items: center;
   justify-content: flex-start;
   gap: 10px;
-
-  border-width: 2px;
-  border-style: solid;
-  border-image: linear-gradient(90deg, rgba(26, 0, 36, 1) 0%, rgba(9, 52, 121, 1) 97%);
-  border-image-slice: 1;
-
-  width: 100px;
+  width: 150px;
   height: auto;
-
   margin:5px;
 }
 figcaption{
